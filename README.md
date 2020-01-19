@@ -19,7 +19,13 @@ contains the Dockerfile and the Instructions to setup deltachat to develop delta
 
 
 5. To start the container you need to run `docker run --name deltachat -it -d deltachat`, [more infos about docker run](https://docs.docker.com/engine/reference/commandline/run/).
-   Now we can check if the container is running using `docker ps`, if we see an container running named deltachat, we can contiue, if not check if you did run the container correctly.
+   Now we can check if the container is running using `docker ps`, if we see an container running named deltachat, like shown below, we can contiue, if not check if you did run the container correctly.
+   
+   |CONTAINER ID     |IMAGE         |COMMAND       |CREATED           |STATUS              |PORTS         |NAMES    |
+   | --------------- |:------------:|:------------:|:----------------:|:------------------:|:------------:|:-------:|
+   |d8581538be1f     |deltachat     |"/bin/bash"   |25 seconds ago    |Up 5 seconds        |              |deltachat|
+
+   
    You can connect to the running container using `docker exec -it deltachat bash`, [more infos about docker exec](https://docs.docker.com/engine/reference/commandline/exec/).
    
    If you want to use the container right away you can leave the `-d` out of the `docker run`.
